@@ -1,0 +1,3 @@
+from data_module import internet_users_graph
+
+internet_users_graph(line)
