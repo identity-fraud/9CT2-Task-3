@@ -16,5 +16,20 @@ def internet_users_graph(kind):
 
     plt.show()
 
+def mental_disorders_graph(kind):
 
-mental_disorders = pd.read_csv('Data/percent-of-mental-disorders.csv')
+    mental_disorders = pd.read_csv('Data/percent-of-mental-disorders.csv')
+    mental_disorders['val'] = mental_disorders['val'] * 100
+    mental_disorders.plot(
+    kind=kind,
+    x='year',
+    y='val',
+    color='blue',
+    alpha=0.3,
+    title='Percent of mental disorders in Australia',
+    xticks =(1990, 1995, 2000, 2005, 2010, 2015, 2020, 2025)
+
+
+    )
+    plt.show()
+
