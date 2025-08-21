@@ -56,7 +56,7 @@ def main():
                         break
                 
                 else:
-                        print('Incorrect input, choose numbers 1-5')
+                        print('Icorrect input, choose numbers 1-5')
 
                          
         
